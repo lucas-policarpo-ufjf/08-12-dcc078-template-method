@@ -1,4 +1,4 @@
-public class ClientUser extends User {
+public class UserClient extends User {
 
   public Boolean verifyAuth() {
     String token = this.getToken();

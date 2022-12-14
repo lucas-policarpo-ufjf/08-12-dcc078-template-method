@@ -6,7 +6,7 @@ class UserClientTest {
 
     @Test
     void shouldVerifyAuthCorrectlyWithValidToken() {
-        ClientUser user = new ClientUser();
+        UserClient user = new UserClient();
         user.setName("Caio");
         user.setToken("User4567515");
 
@@ -15,7 +15,7 @@ class UserClientTest {
 
     @Test
     void shouldNotVerifyAuthWithInvalidToken() {
-        ClientUser user = new ClientUser();
+        UserClient user = new UserClient();
         user.setName("Carla");
         user.setToken("U56456s564e65r");
 
@@ -24,7 +24,7 @@ class UserClientTest {
 
     @Test
     void shouldDoLoginWithValidToken() {
-        ClientUser user = new ClientUser();
+        UserClient user = new UserClient();
         user.setName("Caio");
         user.setToken("User4567515");
 
@@ -33,7 +33,7 @@ class UserClientTest {
 
     @Test
     void shouldNotDoLoginWithInvalidToken() {
-        ClientUser user = new ClientUser();
+        UserClient user = new UserClient();
         user.setName("Carla");
         user.setToken("U56456s564e65r");
 
